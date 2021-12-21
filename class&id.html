@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="one">hello everyone</p>
+<p id="one">good </p>
+<p id="one">afternoon</p>
+
+
+<h2 class="two">hello everyone good afternoon</h2>
+<h3 class="two">hello everyone good afternoon</h3>
+
+<button onclick="myFunction()">click</button>
+<script>
+
+ document.getElementById("one").style.color = "red";
+
+ function myFunction(){
+    var x = document.getElementsByClassName("two");
+    x[0].style.backgroundColor = "blue";
+    x[1].style.backgroundColor = "violet";
+
+    var x = document.getElementsByTagName("p");
+    document.getElementById("one").innerHTML = x.length;
+ }
+
+</script>
+
+</body>
+</html>
